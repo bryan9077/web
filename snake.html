@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Three Columns Layout Template</title>
-        <link rel="stylesheet" href="three-columns-style.css" />  
-        <style>
-        	.container {
-    width : 80%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+<head>
+<style>
+
+body{
+    background-color: black;
 }
-
-.site-header {background-color: #30a9de;}
-.site-header-inner {height: 50px;}
-
+h1{
+    background-color: ghostwhite;
+}
+p{
+    background-color: ghostwhite;
+}
+footer{
+    background-color: #333;
+    color:  #aaa;
+    text-align: center;
+}
+#divSnake{
+  width: 100px;
+  height: 25px;
+  background: red;
+  position: relative;
+  animation: myfirst 10s infinite;
+  animation-direction: alternate;
+}
 .site-main {background-color: #fff;}
 .content {
     height: 400px;
@@ -37,23 +48,48 @@
     clear: both;
 }
 
-.site-footer {background-color: #607d8b;}
-.site-footer-inner {height: 50px;}
-        </style>
-    </head>
-    <body>
-        <header class="site-header">
-            <div class="container site-header-inner"></div>
-        </header>
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  5%   {background: red; left: 75px; top: 0px;}
+  10%   {background: red; left: 150px; top: 0px;}
+  15%  {background: red; left: 225px; top: 0px;}
+  20%   {background: red; left: 300px; top: 0px;}
+  25%   {background: yellow; left: 375px; top: 0px;}
+  30%   {background: yellow; left: 450px; top: 0px;}
+  35%   {background: yellow; left: 525px; top: 0px;}
+  40%  {background: yellow; left: 600px; top: 0px;}
+  45%  {background: yellow; left: 675px; top: 0px;}
+  50% {background: blue; left: 750px; top: 0px;}
+  55%   {background: blue; left: 825px; top: 0px;}
+  60%   {background: blue; left: 900px; top: 0px;}
+  65%   {background: blue; left: 975px; top: 0px;}
+  70%   {background: blue; left: 1050px; top: 0px;}
+  75%   {background: blue; left: 1125px; top: 0px;}
+  80%   {background: green; left: 1200px; top: 0px;}
+  85%   {background: green; left: 1275px; top: 0px;}
+  90%   {background: green; left: 1350px; top: 0px;}
+  95%   {background: green; left: 1425px; top: 0px;}
+  100%   {background: green; left: 1500px; top: 0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>The website of game link</h1>
+
+<p>Maybe we will put some game link on this website</p>
+<div id="divSnake"></div>
+<p><strong>Note:</strong> The snake link</p>
         <div class="site-main">
             <div class="container site-main-inner">
-                <div class="sitebar sitebar-left">左邊欄</div>
-                <div class="content">中間欄</div>
-                <div class="sitebar">右邊欄</div>
+                <div class="sitebar sitebar-left"></div>
+                <div class="content">1.Snake Game=</div>
+                <div class="sitebar"></div>
             </div>
-        <footer class="site-footer">
-            <div class="container site-footer-inner"></div>
-        </footer>
-        </div>
-    </body>
+
+<div id="divSnake"></div>
+  <footer>
+    <p3>© 2021 poss_snake</p3>
+  </footer>
+</body>
 </html>
