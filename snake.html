@@ -1,96 +1,59 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>snake link</title>
-		<style type="text/css">
-			*{
-				margin: 0;
-				padding: 0;
-				list-style: none;
-			}
-			.item .pic img{
-				width: 100%;
-			}
-			
-			.footer{
-				background-color: #333;
-				color:  #aaa;
-				text-align: center;
-				padding: 10px 0;
-			}
+    <head>
+        <title>Three Columns Layout Template</title>
+        <link rel="stylesheet" href="three-columns-style.css" />  
+        <style>
+        	.container {
+    width : 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-			/*.item-group{
-				display: flex;
-			}*/
-		</style>
-	</head>
-	<body>
-		
+.site-header {background-color: #30a9de;}
+.site-header-inner {height: 50px;}
 
-		<div class="banner">
-			<img src="">
-		</div>
+.site-main {background-color: #fff;}
+.content {
+    height: 400px;
+    width: 36%;
+    float: left;
+    background-color: #dddddd;
+}
+.sitebar {
+    height: 400px;
+    width: 32%;
+    float: right;
+    background-color: darkmagenta; 
+}
+.sitebar-left {
+    float: left;
+    background-color: rgb(202, 120, 120);
+}
+.site-main-inner::after {
+    content:'';
+    display: block;
+    clear: both;
+}
 
-		<div class="about">
-			<div class="wrap">
-				<div class="title">
-					<h2>About us</h2>
-					<p>aaaaaaaaa</p>
-				</div>
-				<div class="item-group">
-					<div class="item">
-						<div class="pic">
-							<img src="https://picsum.photos/300/200?random=2">
-						</div>
-						<div class="text">
-							<h3>title</h3>
-							<p>context</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="pic">
-							<img src="https://picsum.photos/300/200?random=1">
-						</div>
-						<div class="text">
-							<h3>title</h3>
-							<p>context</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="pic">
-							<img src="https://picsum.photos/300/200?random=3">
-						</div>
-						<div class="text">
-							<h3>title</h3>
-							<p>context</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="service">
-			<div class="wrap">
-				<div class="title"></div>
-				<div class="item-group">
-					<div class="item">
-						<div class="pic">
-							<img src="https://picsum.photos/300/200?random=1">
-						</div>
-						<div class="text">
-							<h3>title</h3>
-							<p>context</p>
-						</div>
-					</div>
-		</div>
-
-		<div class="footer">
-			end of page
-		</div>
-
-	</body>
+.site-footer {background-color: #607d8b;}
+.site-footer-inner {height: 50px;}
+        </style>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container site-header-inner"></div>
+        </header>
+        <div class="site-main">
+            <div class="container site-main-inner">
+                <div class="sitebar sitebar-left">左邊欄</div>
+                <div class="content">中間欄</div>
+                <div class="sitebar">右邊欄</div>
+            </div>
+        <footer class="site-footer">
+            <div class="container site-footer-inner"></div>
+        </footer>
+        </div>
+    </body>
 </html>
