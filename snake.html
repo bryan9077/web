@@ -67,8 +67,8 @@ footer{
   80%   {background: green; left: 1200px; top: 0px;}
   85%   {background: green; left: 1275px; top: 0px;}
   90%   {background: green; left: 1350px; top: 0px;}
-  95%   {background: green; left: 1425px; top: 0px;}
-  100%   {background: green; left: 1500px; top: 0px;}
+  95%   {background: green; left: 1400px; top: 0px;}
+  100%   {background: green; left: 1425px; top: 0px;}
 }
 </style>
 </head>
@@ -78,7 +78,9 @@ footer{
 
 <p>Maybe we will put some game link on this website</p>
 <div id="divSnake"></div>
-<p><strong>Note:</strong> The snake link</p>
+<p><strong>Note:</strong> 
+Hungry snake
+How to play:<br>When you press "Enter" or "Space", the game will start.<br>The snake will move forward to the direction it look at.<br>You can press "WASD" or "^v<>" to turn snake head.<br>If the snake hit it's body or the map boundary, the snake will dead immediately</p>
         <div class="site-main">
             <div class="container site-main-inner">
                 <div class="sitebar sitebar-left">
@@ -90,9 +92,27 @@ footer{
                 1.Snake Game=<input type ="button" onclick="javascript:location.href='https://github.com/lusterofgem/snakeGame'" value="Click_Here"></input>
                 </div>
                 <div class="sitebar">
-                    <div style="">
-                    <img src="images/other_pic.jpg" width="450" height="400">
-                    </div>
+                    <p2>How to compile:<br>
+                        1.Download the source codegit clone: <a href="https://github.com/lusterofgem/snakeGame">This link</a><br>
+
+                        2.Install cmake
+                        link: 
+                        <a href="https://cmake.org/download/">cmake</a><br>
+
+                        3.Download SFML 2.5.1
+                        link: 
+                        <a href="https://www.sfml-dev.org/download/sfml/2.5.1/">SFML 2.5.1</a><br>
+
+                        4.Build SFML library by the toturial in SFML website
+                        link: <a href="https://www.sfml-dev.org/tutorials/2.5/compile-with-cmake.php">SFML website</a><br>
+
+                        5.Edit the cmake setting file in snakeGame/CMakeLists.txt, change the SFML_DIR to your sfml build directory.<br>
+
+                        6.Make sure you finished the steps above, you are ready to compile this game. 🤠
+                        Go in directory snakeGame/build and use terminal with following command call cmake to build.
+                        - cmake ..
+                        - cmake --build .
+                    </p2>
                 </div>
             </div>
 
