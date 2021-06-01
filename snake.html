@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-
+/*文字*/
 body{
     background-color: black;
 }
@@ -17,6 +17,7 @@ footer{
     color:  #aaa;
     text-align: center;
 }
+/*移動的蛇*/
 #divSnake{
   width: 100px;
   height: 25px;
@@ -24,27 +25,6 @@ footer{
   position: relative;
   animation: myfirst 10s infinite;
   animation-direction: alternate;
-}
-.site-main {background-color: #fff;}
-.content {
-    height: 400px;
-    width: 36%;
-    float: left;
-    background-color: #dddddd;
-}
-.sitebar {
-    height: 400px;
-    width: 32%;
-    float: right;
-    background-color: white; 
-}
-.sitebar-left {
-    float: left;
-}
-.site-main-inner::after {
-    content:'';
-    display: block;
-    clear: both;
 }
 
 @keyframes myfirst {
@@ -69,6 +49,28 @@ footer{
   90%   {background: green; left: 1350px; top: 0px;}
   95%   {background: green; left: 1400px; top: 0px;}
   100%   {background: green; left: 1425px; top: 0px;}
+}
+/*三欄結構*/
+.site-main {background-color: #fff;}
+.content {
+    height: 400px;
+    width: 36%;
+    float: left;
+    background-color: #dddddd;
+}
+.sitebar {
+    height: 400px;
+    width: 32%;
+    float: right;
+    background-color: white; 
+}
+.sitebar-left {
+    float: left;
+}
+.site-main-inner::after {
+    content:'';
+    display: block;
+    clear: both;
 }
 </style>
 </head>
